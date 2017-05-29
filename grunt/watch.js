@@ -1,7 +1,7 @@
 module.exports = {
 	css: {
 	  files: 'assets/dev/scss/**/*.scss',
-	  tasks: [ 'sass:dev' ],
+	  tasks: [ 'sass:dev', 'postcss' ],
 	  options: { livereload: true }
 	},
 	scripts: {

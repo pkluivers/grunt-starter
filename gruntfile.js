@@ -34,8 +34,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('production', [
   	'sass:prod',
-  	'uglify',
-    'postcss'
+  	'uglify'
   ]);
 
 };

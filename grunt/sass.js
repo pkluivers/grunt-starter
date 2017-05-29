@@ -10,6 +10,6 @@ module.exports = {
       sourceMap: false,
       outputStyle: 'compressed'
     },
-    files: { 'assets/prod/css/style.css' : 'assets/dev/scss/style.scss' }
+    files: { 'assets/prod/css/style.css' : 'assets/dev/css/style.css' }
   }
 }
