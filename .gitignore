@@ -1,0 +1,10 @@
+# Gitignore file
+
+# Default
+.DS_Store
+
+# Ignore dependencies
+node_modules
+
+# Ignore task runner
+grunt
