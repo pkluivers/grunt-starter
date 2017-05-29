@@ -11,5 +11,12 @@ module.exports = {
 	  		livereload: true,
 	  		spawn: false
 	  	}
+	},
+	imagemin: {
+		files: ['assets/dev/img/**/*.{png,jpg,gif,svg,jpeg,JPG}'],
+		tasks: ['imagemin:dynamic'],
+		options: {
+			spawn: false
+		}
 	}
 }
