@@ -1,11 +1,11 @@
 module.exports = {
 	css: {
-	  files: 'assets/dev/scss/**/*.scss',
-	  tasks: [ 'sass:dev', 'postcss' ],
+	  files: 'src/assets/scss/**/*.scss',
+	  tasks: [ 'sass:src' ],
 	  options: { livereload: true }
 	},
 	scripts: {
-		files: 'assets/dev/js/**/*.js',
+		files: 'src/assets/js/**/*.js',
 	  	tasks: [ 'uglify' ],
 	  	options: { 
 	  		livereload: true,
@@ -13,7 +13,7 @@ module.exports = {
 	  	}
 	},
 	imagemin: {
-		files: ['assets/dev/img/**/*.{png,jpg,gif,svg,jpeg,JPG}'],
+		files: ['src/assets/img/**/*.{png,jpg,gif,svg,jpeg,JPG}'],
 		tasks: ['imagemin:dynamic'],
 		options: {
 			spawn: false

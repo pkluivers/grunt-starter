@@ -1,15 +1,9 @@
 module.exports = {
-  dev: {
+  src: {
     options: {
-      sourceMap: true
-    },
-    files: { 'assets/dev/css/style.css' : 'assets/dev/scss/style.scss' }
-  },
-  prod: {
-    options: {
-      sourceMap: false,
+      sourceMap: true,
       outputStyle: 'compressed'
     },
-    files: { 'assets/prod/css/style.css' : 'assets/dev/css/style.css' }
+    files: { 'public/assets/css/style.css' : 'src/assets/scss/style.scss' }
   }
 }

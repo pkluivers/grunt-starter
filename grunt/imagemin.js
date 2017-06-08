@@ -9,9 +9,9 @@ module.exports = {
 	    },
 		files: [{
 			expand: true,
-			cwd: 'assets/dev/img/',
+			cwd: 'src/assets/img/',
 			src: ['**/*.{png,jpg,gif,svg,jpeg,JPG}'],
-			dest: 'assets/prod/img/'
+			dest: 'public/assets/dev/img/'
 		}]
 	}
 }

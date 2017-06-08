@@ -12,9 +12,7 @@ module.exports = function(grunt) {
 
     uglify: require('./grunt/uglify.js'),
 
-    imagemin: require('./grunt/imagemin.js'),
-
-    postcss: require('./grunt/autoprefix.js')
+    imagemin: require('./grunt/imagemin.js')
 
   });
 
@@ -24,7 +22,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-postcss');
+  // grunt.loadNpmTasks('grunt-postcss');
 
   // Default task(s).
   grunt.registerTask('default', [
