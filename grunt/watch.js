@@ -1,7 +1,7 @@
 module.exports = {
 	css: {
 	  files: 'src/assets/scss/**/*.scss',
-	  tasks: [ 'sass:src' ],
+	  tasks: [ 'sass:src', 'postcss:prefix' ],
 	  options: { livereload: true }
 	},
 	scripts: {
@@ -14,7 +14,7 @@ module.exports = {
 	},
 	imagemin: {
 		files: ['src/assets/img/**/*.{png,jpg,gif,svg,jpeg,JPG}'],
-		tasks: ['imagemin:dynamic'],
+		tasks: ['imagemin'],
 		options: {
 			spawn: false
 		}

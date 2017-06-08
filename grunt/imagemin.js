@@ -11,7 +11,7 @@ module.exports = {
 			expand: true,
 			cwd: 'src/assets/img/',
 			src: ['**/*.{png,jpg,gif,svg,jpeg,JPG}'],
-			dest: 'public/assets/dev/img/'
+			dest: 'public/assets/img/'
 		}]
 	}
 }
