@@ -6,5 +6,8 @@
 # Ignore dependencies
 node_modules
 
-# Ignore task runner
-grunt
+# Ignore generated files and folder
+public/*
+!public/.htaccess
+!public/index.html
+!public/robots.txt
