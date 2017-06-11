@@ -1,0 +1,259 @@
+/* --------------------------------------------------------------------------
+   SETTINGS - Helpers
+   ------------------------------------------------------------------------- */
+
+/**
+ * - Utility classes are helpers that are a small step away from
+ *   inline styling. Use with caution.
+ * - Always use on utility classes to be sure that their
+ *   behaviour is always exactly the same.
+ */
+
+
+/**
+ * Text alignment utilities.
+ */
+
+.u-text-left {
+  text-align: left;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-right {
+  text-align: right;
+}
+
+
+/**
+ * Text size utilities.
+ */
+
+.u-text-h1 {
+  font-size: $font-size-h1;
+  line-height: 1.1;
+  
+  margin-top: 0;
+}
+
+.u-text-h2 {
+  font-size: $font-size-h2;
+}
+
+.u-text-h3 {
+  font-size: $font-size-h3;
+}
+
+
+/**
+ * Text transform utilities.
+ */
+
+.u-text-lower {
+  text-transform: lowercase;
+}
+
+.u-text-capitalize {
+  text-transform: uppercase;
+}
+
+.u-text-normal {
+  font-family: $font-family-primary;
+  font-weight: $font-weight-regular;
+}
+
+.u-text-bold {
+  font-family: $font-family-primary;
+  font-weight: $font-weight-bold;
+}
+
+
+/**
+ * Text color utilities.
+ */
+
+.u-text-primary {
+  color: $color-primary;
+}
+
+
+/**
+ * Spacing utilities.
+ */
+
+.u-row-spacing-0 {
+  margin-bottom: 0;
+}
+
+.u-row-spacing {
+  margin-bottom: $spacing-small;
+}
+
+.u-row-spacing-medium {
+  margin-bottom: $spacing-default;
+}
+
+.u-row-spacing-large {
+  margin-bottom: $spacing-double;
+}
+
+.u-row-spacing-huge {
+  margin-bottom: $spacing-triple;
+}
+
+.u-spacing-left {
+  margin-left: $spacing-small;
+}
+
+.u-spacing-right {
+  margin-right: $spacing-small;
+}
+
+
+/**
+ * Display utilities.
+ */
+
+.u-pull-left {
+  float: left;
+}
+
+.u-pull-right {
+  float: right;
+}
+
+.u-block {
+  display: block;
+}
+
+
+/**
+ * Fa icon margins
+ */
+
+.fa-right {
+  margin-right: 10px;
+}
+
+.fa-left {
+  margin-left: 10px;
+}
+
+
+/**
+ * Verticale alignment
+ */
+
+.va-container {
+  width: 100%;
+  display: table;
+}
+
+.va-middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.va-bottom {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+
+/**
+ * Heights
+ */
+
+.u-h-275 {
+  min-height: 275px;
+}
+
+
+/**
+ * Img 
+ */
+
+.u-img-radius {
+  border-radius: $border-radius;
+}
+
+.u-img-round {
+  border-radius: 50%;
+}
+
+.u-img-left {
+  margin-right: auto;
+}
+
+.u-img-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.u-img-right {
+  margin-left: auto;
+}
+
+
+/**
+ * Resets default list styles. Useful for navigation and such.
+ */
+
+.u-list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.u-list-inline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    display: inline-block;
+  }
+}
+
+
+/**
+ * Overflows
+ */
+
+.u-hidden {
+  overflow: hidden;
+}
+
+.u-hide {
+  display: none;
+}
+
+
+/**
+ * Cover
+ */
+
+.u-cover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+/**
+ * Mediaquery utilities.
+ */
+
+@media only screen and(min-width: 769px) {
+  .u-m-show {
+    display: none;
+  }
+}
+
+@media only screen and(max-width: 768px) {
+  .u-m-hide {
+    display: none;
+  }
+}

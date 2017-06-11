@@ -1,0 +1,66 @@
+/* --------------------------------------------------------------------------
+   Settings - Global
+   ------------------------------------------------------------------------- */
+
+/**
+ * Everything is based on the rhythm, horizontal as well as vertical.
+ */
+
+$rhythm: 0.5em;
+
+/**
+ * The max width of a wrapper.
+ */
+
+$wrapper: 75em;
+
+/**
+ * The amount of columns that span a wrapper. All grid calculations are
+ * based on this number.
+ */
+
+$columns: 12;
+$gutter: ($rhythm * 4);
+
+
+
+
+
+/* Spacings
+   ------------------------------------------------------------------------- */
+
+/**
+ * Spacings are based on and multiplied by the defined
+ * vertical rythm.
+ */
+
+/* Spacing multipliers */
+
+$spacing-small: ($rhythm / 2);
+$spacing-default: $rhythm;
+$spacing-double: ($spacing-default * 2);
+$spacing-triple: ($spacing-default * 3);
+
+
+
+
+
+/* Paths
+   ------------------------------------------------------------------------- */
+
+/**
+ * Relative path variables for images and fonts.
+ */
+
+$path-img: '../img/';
+
+
+
+
+
+/* Borders
+   ------------------------------------------------------------------------- */
+
+/* Default border radius when present. */
+
+$border-radius: 0.125em;

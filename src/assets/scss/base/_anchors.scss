@@ -1,0 +1,17 @@
+/* --------------------------------------------------------------------------
+   BASE - Anchors
+   ------------------------------------------------------------------------- */
+
+/**
+ * - Anchors inherit their parent element's color so anchors are never
+ *   unwanted any other color. Anchors can be colored by defining anchors in
+ *   their associated parent element of by utility classes.
+ *
+ * - Anchors by default don't contain any `text-decoration` on hover status.
+ */
+
+a {
+  color: $color-anchors;
+
+  text-decoration: none;
+}

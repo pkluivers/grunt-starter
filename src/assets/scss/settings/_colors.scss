@@ -1,0 +1,51 @@
+/* --------------------------------------------------------------------------
+   SETTINGS - Colors
+   ------------------------------------------------------------------------- */
+
+/**
+ * All global site colors are contained within this document.
+ * Any color should always be defined and referenced here.
+ */
+
+/* Base colors
+   ------------------------------------------------------------------------- */
+
+$color-white: #fff;
+$color-black: #000;
+
+
+
+
+
+/* Text colors
+   ------------------------------------------------------------------------- */
+
+$color-body: $color-black;
+$color-anchors: inherit;
+
+
+
+
+
+/* Document colors
+   ------------------------------------------------------------------------- */
+
+/**
+ * All colors are set to their defaults. Defaults should always be kept
+ * in a comment when overwritten.
+ */
+
+$color-select: #b4d5fe;
+$color-placeholder: #c7c7cd;
+$color-border: #ccc;
+
+$color-primary: #000;
+
+
+
+
+
+/* Background colors
+   ------------------------------------------------------------------------- */
+
+$color-background-body: $color-white;

@@ -1,0 +1,65 @@
+/* --------------------------------------------------------------------------
+   SETTINGS - Grid
+   ------------------------------------------------------------------------- */
+
+/**
+ * The grid @mixin establishes the display decleration for the grid column
+ * wrapper element. Passable arguments are justification and alignment for
+ * child elements (columns). See full Flexbox documentation for reference
+ * (https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
+ *
+ * Allowed values for `$justify` are: `flex-start`, `flex-end`, `center`,
+ * `space-between`, `space-around`.
+ *
+ * Allowed values for `$align`are: `auto`, `flex-start`, `flex-end`,
+ * `center`, `baseline`, and `stretch`.
+ *
+ * 1. Wrap the layout items so a layout wrapper can contain as many
+ *    layout items as you like.
+ */
+
+@mixin grid($justify: null, $align: null) {
+  display: flex;
+
+  flex-wrap: wrap; /* [1] */
+
+  @if $justify != null {
+    justify-content: $justify;
+  }
+
+  @if $align != null {
+    align-items: $align;
+  }
+}
+
+/**
+ * The column element sets the flex basis of the column based on a
+ * calculation of the passed argument divided by the amount of
+ * columns set in `_settings.global`.
+ *
+ * Allowed values for `$bleed` are: `top`, `right`, `bottom`, `left`.
+ *
+ * Allowed values for `$align`are: `auto`, `flex-start`, `flex-end`,
+ * `center`, `baseline`, and `stretch`.
+ *
+ * 1. The column is defined by `flex-basis` and contains a padding
+ *    property that serves as gutter.
+ */
+
+@mixin column($column: null, $bleed: null, $align: auto) {
+  @if $column != null {
+    flex-basis: ($column * (100% / $columns));
+
+    padding: ($gutter / 2); /* [1] */
+  }
+
+  @if $bleed != null {
+    padding-#{$bleed}: $bleed;
+  }
+
+  @if $align != auto {
+    display: flex;
+
+    align-self: $align;
+  }
+}

@@ -1,0 +1,99 @@
+/* --------------------------------------------------------------------------
+   OBJECTS - Layout
+   ------------------------------------------------------------------------- */
+
+/**
+ * Array for passable content justification in layout object.
+ */
+
+$array-justify: flex-start flex-end center space-between space-around;
+
+/**
+ * Array for passable alignment options for layout item object.
+ */
+
+$array-align: auto flex-start flex-end center baseline stretch;
+
+/**
+ * Array for passable layout object bleed directions.
+ */
+
+$array-directions: top right bottom left;
+
+
+
+
+
+/**
+ * Default layout object is defined by a layout wrapper which sets the
+ * display value followed by layout items which are defined by default
+ * by a class selector and their behavior by data attributes.
+ *
+ * Never visually style a layout object!
+ */
+
+.o-layout {
+  @include grid();
+}
+
+/**
+ * Loop justification array and create a rule for every justify-content
+ * decleration possibility.
+ */
+
+@each $value in $array-justify {
+
+  .o-layout[data-justify="#{$value}"] {
+    @include grid($justify: $value);
+  }
+
+}
+
+/**
+ * Loop align array for layout objects.
+ */
+
+@each $value in $array-align {
+
+  .o-layout[data-align="#{$value}"] {
+    @include grid($align: $value);
+  }
+
+}
+
+
+
+
+
+@for $i from 1 through $columns {
+
+  .o-layout__item[data-column="#{$i}/#{$columns}"] {
+    @include column($column: $i);
+  }
+
+}
+
+/**
+ * Loop directions array and create a rule fore every direction
+ * to be able to bleed the gutter of a layout item.
+ */
+
+@each $value in $array-directions {
+
+  .o-layout__item[data-bleed="#{$value}"] {
+    @include column($bleed: $value);
+  }
+
+}
+
+/**
+ * Loop align array for layout objects.
+ */
+
+@each $value in $array-align {
+
+  .o-layout__item[data-align="#{$value}"] {
+    @include column($align: $value)
+  }
+
+}

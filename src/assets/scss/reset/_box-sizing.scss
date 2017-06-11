@@ -1,15 +1,13 @@
 /* --------------------------------------------------------------------------
-   BASE - Paragraphs
+   RESET - Box sizing
    ------------------------------------------------------------------------- */
-
-p {
-  margin: $font-baseline 0;
+   
+html {
+  box-sizing: border-box;
 }
 
-p:first-child {
-  margin-top: 0;
-}
-
-p:last-child {
-  margin-bottom: 0;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }

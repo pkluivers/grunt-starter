@@ -1,0 +1,16 @@
+/* --------------------------------------------------------------------------
+   BASE - Media
+   ------------------------------------------------------------------------- */
+
+/**
+ * Default img width to 100% for responsive.
+ *
+ * 1. Set height auto to prevent stretching.
+ * 2. Remove white space below images.
+ */
+
+img {
+  max-width: 100%;
+  height: auto; /* [1] */
+  vertical-align: middle /* [2] */
+}

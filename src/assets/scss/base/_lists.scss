@@ -1,15 +1,9 @@
 /* --------------------------------------------------------------------------
-   BASE - Paragraphs
+   BASE - Lists
    ------------------------------------------------------------------------- */
 
-p {
-  margin: $font-baseline 0;
-}
-
-p:first-child {
-  margin-top: 0;
-}
-
-p:last-child {
-  margin-bottom: 0;
+ul,
+ol {
+  margin: 0;
+  padding: 0;
 }

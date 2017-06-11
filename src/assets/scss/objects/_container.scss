@@ -1,0 +1,24 @@
+/* --------------------------------------------------------------------------
+   OBJECTS - Container
+   ------------------------------------------------------------------------- */
+
+/**
+ * The container mixin is a full band layout object which usually contains
+ * a container and layout objects. It often has a top and bottom
+ * padding for seperation of sections.
+ */
+
+@mixin container($padding-top: 0, $padding-bottom: 0) {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+}
+
+
+/**
+ * The container objects utilizes the default container mixin without any
+ * arguments.
+ */
+
+.o-container {
+  @include container(5em, 5em);
+}

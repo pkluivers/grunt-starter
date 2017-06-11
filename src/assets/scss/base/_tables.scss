@@ -1,15 +1,13 @@
 /* --------------------------------------------------------------------------
-   BASE - Paragraphs
+   BASE - Lists
    ------------------------------------------------------------------------- */
 
-p {
-  margin: $font-baseline 0;
-}
+/**
+ * Default border collapse on tables and width 100%.
+ */
 
-p:first-child {
-  margin-top: 0;
-}
+table {
+  width: 100%;
 
-p:last-child {
-  margin-bottom: 0;
+  border-collapse: collapse;
 }

@@ -1,0 +1,19 @@
+/* --------------------------------------------------------------------------
+   BASE - Forms
+   ------------------------------------------------------------------------- */
+
+/**
+ * Inputs, textarea's and selects are 100% wide by default to fill
+ * their defined layout.
+ */
+
+input,
+textarea,
+select {
+  width: 100%;
+
+  border: 0;
+  border-radius: 0;
+
+  appearance: none;
+}

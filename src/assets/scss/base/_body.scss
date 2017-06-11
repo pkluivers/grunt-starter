@@ -1,0 +1,52 @@
+/* --------------------------------------------------------------------------
+   BASE - Body
+   ------------------------------------------------------------------------- */
+
+/**
+ * Set the document root font size at 10px. This allows for
+ * easy calculation of REM sizes.
+ */
+
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Set base font family, size and baseline
+ * as defined in (_settings.colors).
+ * Set font smoothing and rendering.
+ */
+
+body {
+  font-family: $font-family-primary;
+  font-size: $font-size-default;
+  font-weight: $font-weight-default;
+
+  line-height: $font-baseline;
+
+  background-color: $color-background-body;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; /* Firefox 25+ */
+  text-rendering: optimizeLegibility;
+}
+
+/**
+ * Set global placeholder color as defined in (_settings.colors).
+ */
+
+::placeholder {
+  color: $color-placeholder;
+}
+
+/**
+ * Overrule default selection color as deefined in (_settings.colors).
+ */
+
+::selection {
+  background: $color-select;
+}
