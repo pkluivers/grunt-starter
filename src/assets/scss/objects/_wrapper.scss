@@ -15,3 +15,16 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/**
+ * The wrapper objects utilizes the default wrapper mixin without any
+ * arguments.
+ */
+
+.o-wrapper {
+  @include wrapper();
+}
+
+.o-wrapper--small {
+  @include wrapper(37.5);
+}

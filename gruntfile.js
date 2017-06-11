@@ -18,6 +18,8 @@ module.exports = function(grunt) {
 
     postcss: require('./grunt/postcss.js'),
 
+    scsslint: require('./grunt/scsslinter.js')
+
   });
 
   // Default task(s).
