@@ -1,3 +1,3 @@
 $( document ).ready(function() {
-    console.log( "ready for action!" );
+    console.log( "ready for action baby!" );
 });

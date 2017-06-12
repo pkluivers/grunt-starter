@@ -1,7 +1,7 @@
 module.exports = {
 	scsslint: {
     allFiles: [
-      'src/assets/scss/**/*.scss',
+      '<%= path_src %>scss/**/*.scss',
     ],
     options: {
       bundleExec: false,

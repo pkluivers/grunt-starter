@@ -1,12 +1,18 @@
 module.exports = function(grunt) {
-
+  
   require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    path_src: './src/assets/',
+    path_public: './public/assets/',
     connect: {
       uses_defaults: {}
     },
+
+
+    /* Require tasks
+     ------------------------------------------------------------------------- */
 
     sass: require('./grunt/sass.js'),
 
@@ -22,7 +28,10 @@ module.exports = function(grunt) {
 
   });
 
-  // Default task(s).
+
+  /* Serveral tasks
+     ------------------------------------------------------------------------- */
+
   grunt.registerTask('default', [
   	'connect',
   	'watch'

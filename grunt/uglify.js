@@ -1,5 +1,5 @@
 module.exports = {
 	my_targets: {
-		files: { 'public/assets/js/app.min.js' : ['src/assets/js/**/*.js'] }
+		files: { '<%= path_public %>js/app.min.js' : ['<%= path_src %>js/**/*.js'] }
     }
 }

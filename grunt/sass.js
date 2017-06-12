@@ -4,6 +4,6 @@ module.exports = {
       sourceMap: true,
       outputStyle: 'compressed'
     },
-    files: { 'public/assets/css/main.css' : 'src/assets/scss/main.scss' }
+    files: { '<%= path_public %>css/main.css' : '<%= path_src %>scss/main.scss' }
   }
 }

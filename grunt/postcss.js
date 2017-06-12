@@ -5,6 +5,6 @@ module.exports = {
                 require('autoprefixer')({ browsers: ['last 8 versions', 'ie 9'] })
             ]
         },
-         src: 'public/assets/css/*.css'
+         src: '<%= path_public %>css/*.css'
     }
 };
