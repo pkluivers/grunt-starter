@@ -4,10 +4,18 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+
     path_src: './src/assets/',
     path_public: './public/assets/',
+
     connect: {
-      uses_defaults: {}
+      server: {
+        options: {
+          port: 9000,
+          base: './public',
+          keepalive: true
+        }
+      }
     },
 
 
@@ -33,14 +41,15 @@ module.exports = function(grunt) {
      ------------------------------------------------------------------------- */
 
   grunt.registerTask('default', [
-  	'connect',
-  	'watch'
-  ]);
-
-  grunt.registerTask('production', [
-  	'sass',
+    'sass',
     'postcss:prefix',
-  	'uglify'
+    'uglify',
+    'imagemin'
   ]);
 
+  grunt.registerTask('watch', [
+    'connect',
+    'watch'
+  ]);
+  
 };
