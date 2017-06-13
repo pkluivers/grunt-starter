@@ -8,16 +8,6 @@ module.exports = function(grunt) {
     path_src: './src/assets/',
     path_public: './public/assets/',
 
-    connect: {
-      server: {
-        options: {
-          port: 9000,
-          base: './public',
-          keepalive: true
-        }
-      }
-    },
-
 
     /* Require tasks
      ------------------------------------------------------------------------- */
@@ -44,11 +34,11 @@ module.exports = function(grunt) {
     'sass',
     'postcss:prefix',
     'uglify',
-    'imagemin'
+    'imagemin',
+    'watch'
   ]);
 
   grunt.registerTask('watch', [
-    'connect',
     'watch'
   ]);
   
